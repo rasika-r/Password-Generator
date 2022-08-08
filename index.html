@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="main-container">
+        <div class="nav-container">
+            <div class="left">logo</div>
+            <div class="right">Login</div>
+        </div>
+        <div class="create-title">Create your new Password!</div>
+        <div class="body-container">
+            <div class="includes">
+                <div class="display-box">
+                    <input type="text" name="pwd-display" id="pwd-display" placeholder="Password will display here"> <br>
+                </div>
+                    <table>
+                        <tr>
+                            <td><label for="length">Password length</label></td>
+                            <td><div class="length"><input type="number" name="length" id="length" min="0" max="50" value="length"></div></td>
+                        </tr>
+                        <tr>
+                            <td><label for="upper">Include uppercase</label></td>
+                            <td><input type="checkbox" name="upper" id="upper" value="upper"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lower">Include lowercase</label></td>
+                            <td><input type="checkbox" name="lower" id="lower" value="lower"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="number">Include numbers</label></td>
+                            <td><input type="checkbox" name="number" id="number" value="number"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="symbol">Include symbols</label></td>
+                            <td><input type="checkbox" name="symbol" id="symbol" value="symbol"><br></td>
+                        </tr>
+                    </table>
+            <div class="buttons">
+                <div class="gen-pwd-class"><button class="gen-btn">Generate Password</button></div>
+                <div class="copy-pwd-class"><button class="copy-btn">Copy Password</button></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
