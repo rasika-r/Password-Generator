@@ -20,13 +20,20 @@ body {
 }
 
 .nav-container .left {
-  margin-left: 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
 }
 
 .nav-container .right {
   margin-right: 2rem;
   padding: 0.25rem 1rem;
   border: 1px solid #66fcf1;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.nav-container .right:hover {
+  border-radius: 1.5rem;
 }
 
 .create-title {
@@ -46,7 +53,7 @@ body {
   padding: 2rem;
   margin: 0 15rem;
   font-family: "Sen", sans-serif;
-  box-shadow: 10px 5px 15px #1f2833e4;
+  box-shadow: 10px 5px 15px #1f2833ec;
 }
 
 .display-box {
@@ -99,7 +106,11 @@ table td input {
   border-radius: 2rem;
   border-color: #66fcf1;
   box-shadow: 2px 1px 3px #66fcf1;
-  cursor:pointer;
+}
+
+.buttons button:hover {
+  color: #66fcf1;
+  box-shadow: 2px 2px 5px #66fcf1;
 }
 
 @media screen and (max-width: 1200px) {
