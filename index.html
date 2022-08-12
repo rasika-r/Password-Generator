@@ -15,8 +15,13 @@
             <div class="right">Login</div>
         </div>
         <div class="create-title">Create your new Password!</div>
+        
         <div class="body-container">
             <div class="includes">
+                <div class="alert-box" id="alert-box" style="display: none;">
+                    <strong class="copy_txt">Copied to clipboard</strong>
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                  </div>
                 <div class="display-box">
                     <input type="text" name="pwd-display" id="pwd-display" placeholder="Password will display here" disabled> <br>
                 </div>
@@ -45,7 +50,6 @@
             <div class="buttons">
                 <button id="gen-btn" class="gen-btn">Generate Password</button>
                 <button id="copy-btn" class="copy-btn">Copy Password</button>
-
             </div>
         </div>
     </div>

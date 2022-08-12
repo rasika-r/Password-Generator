@@ -6,7 +6,7 @@ const numberElement = document.getElementById('number')
 const symbolElement = document.getElementById('symbol')
 const genBtnElement = document.getElementById('gen-btn')
 const copyBtnElement = document.getElementById('copy-btn')
-
+const alertElement = document.getElementById('alert')
 
 function generatePassword() {
     const len = +lenElement.value;
@@ -69,11 +69,14 @@ copyBtnElement.addEventListener('click', ()=>{
     const password = dispElement.value;
 
     if(!password) return;
-
+    
     textarea.value = password;
     document.body.appendChild(textarea);
     textarea.select();
     document.execCommand('copy');
     textarea.remove();
-    alert('Copied')
+    document.getElementById('alert-box').style.display='block';
 })
+
+
+

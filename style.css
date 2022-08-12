@@ -51,7 +51,7 @@ body {
 .includes {
   background-color: #1f2833;
   padding: 2rem;
-  margin: 0 15rem;
+  margin: 0 15rem 3rem 15rem;
   font-family: "Sen", sans-serif;
   box-shadow: 10px 5px 15px #1f2833ec;
 }
@@ -106,12 +106,47 @@ table td input {
   border-radius: 2rem;
   border-color: #66fcf1;
   box-shadow: 2px 1px 3px #66fcf1;
-  cursor:pointer;
 }
 
 .buttons button:hover {
   color: #66fcf1;
-  box-shadow: 2px 2px 5px #66fcf1;
+  box-shadow: 2px 1px 5px #66fcf1;
+}
+
+.alert-box {
+  width: fit-content;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #9dfff8;
+  padding: 1rem 5rem;
+  border: 1px solid #cec8c8;
+  border-radius: 2rem;
+  margin: 1rem auto;
+  -webkit-animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
+}
+
+.alert-box .copy_txt {
+  margin-right: 6rem;
+}
+
+.alert-box .closebtn {
+  cursor: pointer;
+}
+
+.alert-box:hover .closebtn {
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    border-radius: 0.5rem;
+  }
+  to {
+    opacity: 1;
+    border-radius: 2rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -153,6 +188,12 @@ table td input {
 
   .includes {
     margin: 0 10rem 3rem 10rem;
+  }
+
+  .alert-box {
+    font-size: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
   }
 }
 
